@@ -132,7 +132,7 @@ const XML_TreeStructure* XML_TreeHandler::getParent(const String& id) const {
         throw String("There is no such element");
     }
     catch (const String& errorMessage) {
-        ErrorHandler::getInstance().logError(errorMessage);
+        ErrorHandler::getInstance().logError(errorMessage);// if a error is thrown the main.cpp should be notified
     }
 }
 
